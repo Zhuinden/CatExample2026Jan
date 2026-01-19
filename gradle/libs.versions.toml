@@ -1,0 +1,63 @@
+[versions]
+versionid-android-gradle-plugin = "8.13.1" # 9.0.0 does not work with Hilt 2.58
+versionid-androidx-activity-compose = "1.12.2"
+versionid-androidx-compose-bom = "2026.01.00"
+versionid-androidx-compose-material-icons-extended = "1.7.8"
+versionid-androidx-core-ktx = "1.17.0"
+versionid-androidx-hilt = "1.3.0"
+versionid-androidx-lifecycle-runtime-ktx = "2.10.0"
+versionid-androidx-test-espresso-core = "3.7.0"
+versionid-androidx-test-ext = "1.3.0"
+versionid-coil-compose = "3.3.0"
+versionid-dagger = "2.58"
+versionid-flow-combinetuple-kt = "1.3.0"
+versionid-junit = "4.13.2"
+versionid-kotlin = "2.3.0"
+versionid-ksp = "2.3.4"
+versionid-retrofit = "3.0.0"
+
+[libraries]
+libraryid-androidx-hilt-common = { module = "androidx.hilt:hilt-common", version.ref = "versionid-androidx-hilt" }
+libraryid-androidx-hilt-navigation-fragment = { module = "androidx.hilt:hilt-navigation-fragment", version.ref = "versionid-androidx-hilt" }
+libraryid-androidx-hilt-navigation = { module = "androidx.hilt:hilt-navigation", version.ref = "versionid-androidx-hilt" }
+libraryid-androidx-hilt-lifecycle-viewmodel-compose = { module = "androidx.hilt:hilt-lifecycle-viewmodel-compose", version.ref = "versionid-androidx-hilt" }
+libraryid-androidx-hilt-lifecycle-viewmodel = { module = "androidx.hilt:hilt-lifecycle-viewmodel", version.ref = "versionid-androidx-hilt" }
+libraryid-androidx-hilt-work = { module = "androidx.hilt:hilt-work", version.ref = "versionid-androidx-hilt" }
+libraryid-androidx-hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "versionid-androidx-hilt" }
+libraryid-androidx-hilt-compiler = { module = "androidx.hilt:hilt-compiler", version.ref = "versionid-androidx-hilt" }
+libraryid-androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "versionid-androidx-core-ktx" }
+libraryid-androidx-test-ext = { group = "androidx.test.ext", name = "junit", version.ref = "versionid-androidx-test-ext" }
+libraryid-androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "versionid-androidx-test-espresso-core" }
+libraryid-androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "versionid-androidx-lifecycle-runtime-ktx" }
+libraryid-androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "versionid-androidx-activity-compose" }
+libraryid-androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "versionid-androidx-compose-bom" }
+libraryid-androidx-compose-ui = { group = "androidx.compose.ui", name = "ui" }
+libraryid-androidx-compose-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+libraryid-androidx-compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+libraryid-androidx-compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+libraryid-androidx-compose-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+libraryid-androidx-compose-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+libraryid-androidx-compose-material-icons-extended = { group = "androidx.compose.material", name = "material-icons-extended", version.ref = "versionid-androidx-compose-material-icons-extended" }
+libraryid-androidx-compose-material3 = { group = "androidx.compose.material3", name = "material3" }
+libraryid-androidx-compose-material3-adaptive-navigation-suite = { group = "androidx.compose.material3", name = "material3-adaptive-navigation-suite" }
+libraryid-coil-compose = { module = "io.coil-kt.coil3:coil-compose", version.ref = "versionid-coil-compose" }
+libraryid-coil-network-okhttp = { module = "io.coil-kt.coil3:coil-network-okhttp", version.ref = "versionid-coil-compose" }
+libraryid-com-zhuinden-flow-combinetuple-kt = { module = "com.github.Zhuinden:flow-combinetuple-kt", version.ref = "versionid-flow-combinetuple-kt" }
+libraryid-dagger = { module = "com.google.dagger:dagger", version.ref = "versionid-dagger" }
+libraryid-dagger-compiler = { module = "com.google.dagger:dagger-compiler", version.ref = "versionid-dagger" }
+libraryid-dagger-hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "versionid-dagger" }
+libraryid-dagger-hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "versionid-dagger" }
+libraryid-junit = { group = "junit", name = "junit", version.ref = "versionid-junit" }
+libraryid-squareup-retrofit2-retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "versionid-retrofit" }
+libraryid-squareup-retrofit2-converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "versionid-retrofit" }
+libraryid-ksp = { module = "com.google.devtools.ksp:symbol-processing", version.ref = "versionid-ksp" }
+libraryid-ksp-api = { module = "com.google.devtools.ksp:symbol-processing-api", version.ref = "versionid-ksp" }
+libraryid-ksp-gradle-plugin = { module = "com.google.devtools.ksp:symbol-processing-gradle-plugin", version.ref = "versionid-ksp" }
+
+[plugins]
+pluginid-android-application = { id = "com.android.application", version.ref = "versionid-android-gradle-plugin" }
+pluginid-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "versionid-kotlin" }
+pluginid-kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "versionid-kotlin" }
+pluginid-kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize" } # version ref not allowed for some reason
+pluginid-com-google-dagger-hilt-android = { id = "com.google.dagger.hilt.android", version.ref = "versionid-dagger" }
+pluginid-com-google-devtools-ksp = { id = "com.google.devtools.ksp", version.ref = "versionid-ksp" }
